@@ -83,8 +83,9 @@ class Game
        if !over?
          turn
          play
-       end
+      else
        won? ? (puts "Congratulations #{@winner}!") : (puts "Cat's Game!")
+     end
      end
 
 
