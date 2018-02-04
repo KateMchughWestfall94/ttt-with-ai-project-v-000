@@ -58,4 +58,25 @@ class CLI
     play_again?
   end
 
+  def human_vs_human_game
+    game = nil
+    puts "Get three in a row to win!"
+    game = Game.new
+    game.board.display
+    game.play 
+    play_again?
+  end
+
+  def play_again?
+    puts "Do you want to play again? Enter y/n"
+     input = gets.strip
+     if input == "y"
+       menu
+     else
+       puts "Thanks for playing!"
+       exit
+     end
+   end
+    
+
 end
