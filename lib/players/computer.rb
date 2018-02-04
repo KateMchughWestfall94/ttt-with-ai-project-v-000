@@ -20,11 +20,6 @@ module Players
         move
       end
     end
-  end
-      
-
-      
-      
     end
 
   end
