@@ -12,12 +12,12 @@ module Players
           move
         end
       else
-      choices = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+      choices = ["2","4", "6", "8"]
       choice = choices.sample
       if board.taken?(choice) == false
         choice
       else
-        move
+        move(board)
       end
     end
     end
