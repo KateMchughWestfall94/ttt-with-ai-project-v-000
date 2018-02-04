@@ -9,7 +9,7 @@ module Players
         if board.taken?(choice) == false
           choice
         else
-          move
+          move(board)
         end
       else
       choices = ["2","4", "6", "8"]
