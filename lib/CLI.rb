@@ -63,7 +63,7 @@ class CLI
     puts "Get three in a row to win!"
     game = Game.new
     game.board.display
-    game.play 
+    game.play
     play_again?
   end
 
@@ -73,10 +73,10 @@ class CLI
      if input == "y"
        menu
      else
-       puts "Thanks for playing!"
+       puts "Thanks, see you next time!"
        exit
      end
    end
-    
+
 
 end
